@@ -4,8 +4,7 @@ from tkinter import ttk
 from morse import MorseCode
 
 
-class Main:
-    def __init__(self):
+if __name__ == '__main__':
         morse = MorseCode()
         window = Tk()
 
@@ -124,7 +123,7 @@ class Main:
         ).pack(fill=X, padx=20)
 
         def exit_button():
-            print('Program has been successfully stopped!')
+            print('Program is terminated!')
             window.destroy()
 
         Button(
@@ -137,7 +136,3 @@ class Main:
         ).pack(pady=50)
 
         window.mainloop()
-
-
-if __name__ == '__main__':
-    Main()
